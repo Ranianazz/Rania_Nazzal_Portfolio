@@ -2,108 +2,188 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elena Voss | Director &amp; Designer</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin">   <!-- ← Add this line -->
+    <title>Rania Nazzal | Director & Designer</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- NAV -->
     <nav class="navbar">
       <div class="nav-container">
-        <a href="index.html" class="logo">Rania</a>
+        <a href="#" class="logo">Rania Nazzal</a>
         <div class="nav-links">
-          <a href="index.html" class="active">Home</a>
-          <a href="ux.html">UX</a>
-          <a href="ui.html">UI</a>
+          <a href="#" class="active">Home</a>
+          <a href="ux.html">UX/UI</a>
           <a href="videos.html">Videos</a>
-          <a href="games.html">Games &amp; Immersive</a>
+          <a href="games.html">Games</a>
         </div>
-        <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
           <i class="fas fa-bars"></i>
         </button>
       </div>
     </nav>
 
-    <!-- HERO -->
-    <header class="hero">
+    <!-- Mobile panel -->
+    <div class="overlay-blur" id="overlayBlur"></div>
+    <div class="mobile-nav-panel" id="mobilePanel">
+      <button class="close-mobile" id="closeMobileBtn">&times;</button>
+      <a href="#" class="active">Home</a>
+      <a href="#">UX</a>
+      <a href="#">UI</a>
+      <a href="#">Videos</a>
+      <a href="#">Games & Immersive</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="hero hero-home">
       <div class="hero-video-bg">
-        <!-- Placeholder for video background - replace src with your reel -->
-        <video autoplay muted loop playsinline>
+        <!-- 🎥 REPLACE WITH YOUR HERO BACKGROUND VIDEO -->
+        <video autoplay muted loop playsinline id="heroBgVideo">
           <source
             src="https://assets.mixkit.co/videos/preview/754/754-small.mp4"
             type="video/mp4"
           />
+          Your browser does not support the video tag.
         </video>
       </div>
       <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Rania Nazzal</h1>
+    <p class="hero-subtitle">Film Director • UX/UI Designer • Creative Technologist</p>
+    
+  <!--  <div class="hero-buttons">
+      <a href="#" class="btn btn-primary">Watch Reel</a>
+      <a href="#" class="btn btn-secondary">Explore Work</a>
+    </div>
+    -->
 
-      <div class="hero-content">
-        <h1 class="hero-title">Rania Nazzal</h1>
-        <p class="hero-subtitle">
-          Film Director • UX/UI Designer • Creative Technologist
-        </p>
-
-        <div class="hero-buttons">
-          <a href="videos.html" class="btn btn-primary">Watch Reel</a>
-          <a href="ux.html" class="btn btn-secondary">Explore Work</a>
-        </div>
-
-        <div class="scroll-indicator">
-          <span>Scroll to begin</span>
-          <i class="fas fa-chevron-down"></i>
-        </div>
-      </div>
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span>Scroll to begin</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </div>
     </header>
 
-    <!-- FEATURED -->
-    <section class="featured">
-      <div class="container">
-        <h2>Featured Projects</h2>
-        <div class="featured-grid">
-          <a href="ux.html" class="featured-card">
-            <div class="card-image">
-              <img
-                src="https://picsum.photos/id/1015/600/400"
-                alt="UX Project"
-              />
-            </div>
-            <div class="card-content">
-              <span class="tag">UX Design</span>
-              <h3>Neura — Spatial Banking Experience</h3>
-              <p>Redefining digital finance through immersive interfaces.</p>
-            </div>
-          </a>
+    <!-- FEATURED VIDEOS SECTION -->
+<section class="featured">
+  <div class="container">
+    <h2>Featured Videos</h2>
+    
+    <div class="featured-grid">
 
-          <a href="videos.html" class="featured-card">
-            <div class="card-image">
-              <img src="https://picsum.photos/id/201/600/400" alt="Film" />
-            </div>
-            <div class="card-content">
-              <span class="tag">Short Film</span>
-              <h3>"Echoes in the Grid"</h3>
-              <p>Award-winning cyberpunk narrative short.</p>
-            </div>
-          </a>
-
-          <a href="games.html" class="featured-card">
-            <div class="card-image">
-              <img src="https://picsum.photos/id/180/600/400" alt="Game" />
-            </div>
-            <div class="card-content">
-              <span class="tag">Immersive</span>
-              <h3>Voidwalker — VR Experience</h3>
-              <p>Exploration narrative in a collapsing digital universe.</p>
-            </div>
-          </a>
+      <!-- 1 -->
+      <a href="https://youtu.be/hB1pBLYqSm4" target="_blank" class="featured-card video-card">
+        <div class="card-video-wrapper">
+          <img src="https://img.youtube.com/vi/hB1pBLYqSm4/maxresdefault.jpg" class="card-thumbnail" alt="">
+          <iframe class="card-video" 
+                  src="https://www.youtube-nocookie.com/embed/hB1pBLYqSm4?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      </div>
-    </section>
+        <div class="card-content">
+          <span class="tag">Documentary</span>
+          <h3>Documentary</h3>
+          <p>Official excerpt</p>
+        </div>
+      </a>
 
-    <!-- ABOUT -->
+      <!-- 2 - Fixed Thumbnail -->
+      <a href="https://youtu.be/WjJhmvblc1w" target="_blank" class="featured-card video-card">
+        <div class="card-video-wrapper">
+          <img src="https://img.youtube.com/vi/WjJhmvblc1w/hqdefault.jpg" class="card-thumbnail" alt="">
+          <iframe class="card-video" 
+                  src="https://www.youtube-nocookie.com/embed/WjJhmvblc1w?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+          <span class="tag">Immersive Digital Environment</span>
+          <h3>A Digital Journey Of Love</h3>
+          <p></p>
+        </div>
+      </a>
+
+      <!-- 3 -->
+      <a href="https://youtu.be/rRA-od5oFQ0" target="_blank" class="featured-card video-card">
+        <div class="card-video-wrapper">
+          <img src="https://img.youtube.com/vi/rRA-od5oFQ0/maxresdefault.jpg" class="card-thumbnail" alt="">
+          <iframe class="card-video" 
+                  src="https://www.youtube-nocookie.com/embed/rRA-od5oFQ0?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+          <span class="tag">Immersive Digital Environment</span>
+          <h3>Warm Love</h3>
+          <p>Digital environment exploration</p>
+        </div>
+      </a>
+
+      <!-- 4 - Fixed Thumbnail -->
+      <a href="https://youtu.be/8m2r-ecamuE" target="_blank" class="featured-card video-card">
+        <div class="card-video-wrapper">
+          <img src="https://img.youtube.com/vi/8m2r-ecamuE/hqdefault.jpg" class="card-thumbnail" alt="">
+          <iframe class="card-video" 
+                  src="https://www.youtube-nocookie.com/embed/8m2r-ecamuE?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+          <span class="tag">Montage</span>
+          <h3>Life</h3>
+          <p></p>
+        </div>
+      </a>
+
+      <!-- 5 -->
+      <a href="https://youtu.be/e4bGLVX_BLA" target="_blank" class="featured-card video-card">
+        <div class="card-video-wrapper">
+          <img src="https://img.youtube.com/vi/e4bGLVX_BLA/maxresdefault.jpg" class="card-thumbnail" alt="">
+          <iframe class="card-video" 
+                  src="https://www.youtube-nocookie.com/embed/e4bGLVX_BLA?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+          <span class="tag">Animation</span>
+          <h3>Flame Whispers</h3>
+          <p></p>
+        </div>
+      </a>
+
+      <!-- 6 - New Video -->
+      <a href="https://youtu.be/jIUK3gprp-s" target="_blank" class="featured-card video-card">
+        <div class="card-video-wrapper">
+          <img src="https://img.youtube.com/vi/jIUK3gprp-s/maxresdefault.jpg" class="card-thumbnail" alt="">
+          <iframe class="card-video" 
+                  src="https://www.youtube-nocookie.com/embed/jIUK3gprp-s?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+          <span class="tag">Game</span>
+          <h3>Jump</h3>
+          <p></p>
+        </div>
+      </a>
+      
+    </div>
+  </div>
+</section>
+
+    <!-- ABOUT SECTION -->
     <section class="about">
       <div class="container about-grid">
         <div class="about-text">
@@ -118,25 +198,13 @@
             Currently based in Los Angeles, available for commissions and
             collaborations worldwide.
           </p>
-
-          <a href="#" class="btn btn-secondary"
+          <a href="#" class="btn btn-secondary btn-download"
             >Download CV <i class="fas fa-download"></i
           ></a>
         </div>
-
-        <div class="about-stats">
-          <div class="stat">
-            <span class="stat-number">12</span>
-            <span class="stat-label">Films Directed</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">45+</span>
-            <span class="stat-label">UX/UI Projects</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number">8</span>
-            <span class="stat-label">Immersive Installations</span>
-          </div>
+        <!-- Replaced Stats with Portrait Image -->
+        <div class="about-image">
+          <img src="images/Index/Rania.jpg" alt="Rania Nazzal" />
         </div>
       </div>
     </section>
@@ -145,21 +213,17 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div>
-            <p>&copy; 2026 Elena Voss. All rights reserved.</p>
-          </div>
+          <div><p>© 2026 Rania Nazzal. All rights reserved.</p></div>
           <div class="social-links">
-            <a href="#" aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" aria-label="Vimeo"><i class="fab fa-vimeo-v"></i></a>
-            <a href="#" aria-label="LinkedIn"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+            <a href="https://www.linkedin.com/in/rania-nazz-2394b4176" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
           </div>
           <div>
-            <a href="mailto:hello@elenavoss.com">hello@elenavoss.com</a>
+            <a href="mailto:rania.nazzal1@gmail.com">rania.nazzal1@gmail.com</a>
           </div>
         </div>
       </div>
