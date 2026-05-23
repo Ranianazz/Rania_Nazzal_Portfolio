@@ -1,162 +1,286 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Films & Videos | Rania Nazzal</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo">Rania Nazzal</a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="ux.html">UX/UI</a>
-        <a href="videos.html" class="active">Videos</a>
-        <a href="games.html">Games</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Films & Videos | Rania Nazzal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">Rania Nazzal</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="ux.html">UX/UI</a>
+          <a href="videos.html" class="active">Videos</a>
+          <a href="games.html">Games</a>
           <a href="creative.html">Creative Coding</a>
-
+          <a href="Contact.html">Contact</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero -->
-  <header class="hero hero-videos">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1 class="hero-title">Videos</h1>
-      <p class="hero-subtitle">Directing • Cinematography • Visual Storytelling</p>
-          <div class="scroll-indicator" id="scrollIndicator">
-      <span>Scroll to begin</span>
-      <i class="fas fa-chevron-down"></i>
-    </div>
-    </div>
-  </header>
- <!-- FEATURED VIDEOS SECTION -->
-<section class="featured">
-  <div class="container">
-    <h2>Featured Videos</h2>
-    
-    <div class="featured-grid">
+    <!-- Hero -->
+    <header class="hero hero-videos">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Videos</h1>
+        <p class="hero-subtitle">
+          Directing • Cinematography • Visual Storytelling
+        </p>
+        <div class="scroll-indicator" id="scrollIndicator">
+          <span>Scroll to begin</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </header>
+    <!-- FEATURED VIDEOS SECTION -->
+    <section class="featured">
+      <div class="container">
+        <h2>Featured Videos</h2>
 
-      <!-- 1 -->
-      <a href="https://youtu.be/hB1pBLYqSm4" target="_blank" class="featured-card video-card">
-        <div class="card-video-wrapper">
-          <img src="https://img.youtube.com/vi/hB1pBLYqSm4/maxresdefault.jpg" class="card-thumbnail" alt="">
-          <iframe class="card-video" 
-                  src="https://www.youtube-nocookie.com/embed/hB1pBLYqSm4?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
-                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="card-content">
-          <span class="tag">Documentary</span>
-          <h3>Documentary</h3>
-          <p>Official excerpt</p>
-        </div>
-      </a>
+        <div class="featured-grid">
+          <!-- 1 -->
+          <a
+            href="https://youtu.be/hB1pBLYqSm4"
+            target="_blank"
+            class="featured-card video-card"
+          >
+            <div class="card-video-wrapper">
+              <img
+                src="https://img.youtube.com/vi/hB1pBLYqSm4/maxresdefault.jpg"
+                class="card-thumbnail"
+                alt=""
+              />
+              <iframe
+                class="card-video"
+                src="https://www.youtube-nocookie.com/embed/hB1pBLYqSm4?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                frameborder="0"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="card-content">
+              <span class="tag">Documentary</span>
+              <h3>Documentary</h3>
+              <p>Official excerpt</p>
+            </div>
+          </a>
 
-      <!-- 2 - Fixed Thumbnail -->
-      <a href="https://youtu.be/WjJhmvblc1w" target="_blank" class="featured-card video-card">
-        <div class="card-video-wrapper">
-          <img src="https://img.youtube.com/vi/WjJhmvblc1w/hqdefault.jpg" class="card-thumbnail" alt="">
-          <iframe class="card-video" 
-                  src="https://www.youtube-nocookie.com/embed/WjJhmvblc1w?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
-                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="card-content">
-          <span class="tag">Immersive Digital Environment</span>
-          <h3>A Digital Journey Of Love</h3>
-          <p></p>
-        </div>
-      </a>
+          <!-- 2 - Fixed Thumbnail -->
+          <a
+            href="https://youtu.be/WjJhmvblc1w"
+            target="_blank"
+            class="featured-card video-card"
+          >
+            <div class="card-video-wrapper">
+              <img
+                src="https://img.youtube.com/vi/WjJhmvblc1w/hqdefault.jpg"
+                class="card-thumbnail"
+                alt=""
+              />
+              <iframe
+                class="card-video"
+                src="https://www.youtube-nocookie.com/embed/WjJhmvblc1w?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                frameborder="0"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="card-content">
+              <span class="tag">Immersive Digital Environment</span>
+              <h3>A Digital Journey Of Love</h3>
+              <p></p>
+            </div>
+          </a>
 
-      <!-- 3 -->
-      <a href="https://youtu.be/rRA-od5oFQ0" target="_blank" class="featured-card video-card">
-        <div class="card-video-wrapper">
-          <img src="https://img.youtube.com/vi/rRA-od5oFQ0/maxresdefault.jpg" class="card-thumbnail" alt="">
-          <iframe class="card-video" 
-                  src="https://www.youtube-nocookie.com/embed/rRA-od5oFQ0?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
-                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="card-content">
-          <span class="tag">Immersive Digital Environment</span>
-          <h3>Warm Love</h3>
-          <p>Digital environment exploration</p>
-        </div>
-      </a>
+          <!-- 3 -->
+          <a
+            href="https://youtu.be/rRA-od5oFQ0"
+            target="_blank"
+            class="featured-card video-card"
+          >
+            <div class="card-video-wrapper">
+              <img
+                src="https://img.youtube.com/vi/rRA-od5oFQ0/maxresdefault.jpg"
+                class="card-thumbnail"
+                alt=""
+              />
+              <iframe
+                class="card-video"
+                src="https://www.youtube-nocookie.com/embed/rRA-od5oFQ0?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                frameborder="0"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="card-content">
+              <span class="tag">Immersive Digital Environment</span>
+              <h3>Warm Love</h3>
+              <p>Digital environment exploration</p>
+            </div>
+          </a>
 
-      <!-- 4 - Fixed Thumbnail -->
-      <a href="https://youtu.be/8m2r-ecamuE" target="_blank" class="featured-card video-card">
-        <div class="card-video-wrapper">
-          <img src="https://img.youtube.com/vi/8m2r-ecamuE/hqdefault.jpg" class="card-thumbnail" alt="">
-          <iframe class="card-video" 
-                  src="https://www.youtube-nocookie.com/embed/8m2r-ecamuE?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
-                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="card-content">
-          <span class="tag">Montage</span>
-          <h3>Life</h3>
-          <p></p>
-        </div>
-      </a>
+          <!-- 4 - Fixed Thumbnail -->
+          <a
+            href="https://youtu.be/8m2r-ecamuE"
+            target="_blank"
+            class="featured-card video-card"
+          >
+            <div class="card-video-wrapper">
+              <img
+                src="https://img.youtube.com/vi/8m2r-ecamuE/hqdefault.jpg"
+                class="card-thumbnail"
+                alt=""
+              />
+              <iframe
+                class="card-video"
+                src="https://www.youtube-nocookie.com/embed/8m2r-ecamuE?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                frameborder="0"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="card-content">
+              <span class="tag">Montage</span>
+              <h3>Life</h3>
+              <p></p>
+            </div>
+          </a>
 
-      <!-- 5 -->
-      <a href="https://youtu.be/e4bGLVX_BLA" target="_blank" class="featured-card video-card">
-        <div class="card-video-wrapper">
-          <img src="https://img.youtube.com/vi/e4bGLVX_BLA/maxresdefault.jpg" class="card-thumbnail" alt="">
-          <iframe class="card-video" 
-                  src="https://www.youtube-nocookie.com/embed/e4bGLVX_BLA?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
-                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="card-content">
-          <span class="tag">Animation</span>
-          <h3>Flame Whispers</h3>
-          <p></p>
-        </div>
-      </a>
+          <!-- 5 -->
+          <a
+            href="https://youtu.be/e4bGLVX_BLA"
+            target="_blank"
+            class="featured-card video-card"
+          >
+            <div class="card-video-wrapper">
+              <img
+                src="https://img.youtube.com/vi/e4bGLVX_BLA/maxresdefault.jpg"
+                class="card-thumbnail"
+                alt=""
+              />
+              <iframe
+                class="card-video"
+                src="https://www.youtube-nocookie.com/embed/e4bGLVX_BLA?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                frameborder="0"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="card-content">
+              <span class="tag">Animation</span>
+              <h3>Flame Whispers</h3>
+              <p></p>
+            </div>
+          </a>
 
-      <!-- 6 - New Video -->
-      <a href="https://youtu.be/jIUK3gprp-s" target="_blank" class="featured-card video-card">
-        <div class="card-video-wrapper">
-          <img src="https://img.youtube.com/vi/jIUK3gprp-s/maxresdefault.jpg" class="card-thumbnail" alt="">
-          <iframe class="card-video" 
-                  src="https://www.youtube-nocookie.com/embed/jIUK3gprp-s?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
-                  frameborder="0" referrerpolicy="strict-origin-when-cross-origin"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- 6 - New Video -->
+          <a
+            href="https://youtu.be/jIUK3gprp-s"
+            target="_blank"
+            class="featured-card video-card"
+          >
+            <div class="card-video-wrapper">
+              <img
+                src="https://img.youtube.com/vi/jIUK3gprp-s/maxresdefault.jpg"
+                class="card-thumbnail"
+                alt=""
+              />
+              <iframe
+                class="card-video"
+                src="https://www.youtube-nocookie.com/embed/jIUK3gprp-s?autoplay=1&mute=1&muted=1&controls=0&modestbranding=1&rel=0&playsinline=1"
+                frameborder="0"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                "
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="card-content">
+              <span class="tag">Game</span>
+              <h3>Jump</h3>
+              <p></p>
+            </div>
+          </a>
         </div>
-        <div class="card-content">
-          <span class="tag">Game</span>
-          <h3>Jump</h3>
-          <p></p>
-        </div>
-      </a>
-      
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
- <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div><p>© 2026 Rania Nazzal. All rights reserved.</p></div>
           <div class="social-links">
-            <a href="https://www.linkedin.com/in/rania-nazz-2394b4176" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/rania-nazz-2394b4176"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
               <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
@@ -166,6 +290,6 @@
         </div>
       </div>
     </footer>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

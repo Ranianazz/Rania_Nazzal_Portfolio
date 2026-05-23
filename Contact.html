@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <!-- ← Add this line -->
+    <title>Rania Nazzal | Director & Designer</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">Rania Nazzal</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="ux.html">UX/UI</a>
+          <a href="videos.html">Videos</a>
+          <a href="games.html">Games</a>
+          <a href="creative.html">Creative Coding</a>
+          <a href="Contact.html" class="active">Contact</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile panel -->
+    <div class="overlay-blur" id="overlayBlur"></div>
+    <div class="mobile-nav-panel" id="mobilePanel">
+      <button class="close-mobile" id="closeMobileBtn">&times;</button>
+      <a href="#">Home</a>
+      <a href="#">UX/UI</a>
+      <a href="#">Videos</a>
+      <a href="#">Games & Immersive</a>
+      <a href="#" class="active">Contact</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="hero hero-contact">
+      <div class="hero-video-bg">
+        <!-- 🎥 REPLACE WITH YOUR HERO BACKGROUND VIDEO -->
+        <video autoplay muted loop playsinline id="heroBgVideo">
+          <source
+            src="https://assets.mixkit.co/videos/preview/754/754-small.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Contact</h1>
+        <p class="hero-subtitle">
+          Film Director • UX/UI Designer • Creative Technologist
+        </p>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+          <span>Scroll to begin</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I merge cinematic storytelling with immersive digital experiences,
+            combining film direction with human-centered design to create work
+            that feels emotionally powerful and visually engaging. Whether
+            through film, interactive media, or digital worlds, my focus is on
+            crafting experiences that connect with people and leave a lasting
+            impact.
+          </p>
+          <p>
+            Currently based in Melbourne, available for collaborations in
+            Australia.
+          </p>
+          <p>Mobile: 0466 589 587</p>
+          <p>Email: rania.nazzal1@gmail.com</p>
+          <a href="Files/CV.pdf" class="btn btn-secondary btn-download"
+            >Download CV <i class="fas fa-download"></i
+          ></a>
+        </div>
+        <!-- Replaced Stats with Portrait Image -->
+        <div class="about-image">
+          <img src="images/Index/Rania.jpg" alt="Rania Nazzal" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div><p>© 2026 Rania Nazzal. All rights reserved.</p></div>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/rania-nazz-2394b4176"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <div>
+            <a href="mailto:rania.nazzal1@gmail.com">rania.nazzal1@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

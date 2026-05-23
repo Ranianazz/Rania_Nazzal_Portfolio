@@ -74,27 +74,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  
-// Force mute on all video iframes
-document.querySelectorAll('.card-video').forEach(iframe => {
-  iframe.addEventListener('load', () => {
-    try {
-      iframe.contentWindow.postMessage('{"event":"command","func":"mute","args":""}', '*');
-    } catch(e) {}
+  // Force mute on all video iframes
+  document.querySelectorAll(".card-video").forEach((iframe) => {
+    iframe.addEventListener("load", () => {
+      try {
+        iframe.contentWindow.postMessage(
+          '{"event":"command","func":"mute","args":""}',
+          "*",
+        );
+      } catch (e) {}
+    });
   });
-});
 
-// Optional: Reset iframe when mouse leaves (prevents sound leak)
-document.querySelectorAll('.video-card').forEach(card => {
-  card.addEventListener('mouseleave', () => {
-    const iframe = card.querySelector('.card-video');
-    if (iframe) {
-      const src = iframe.src;
-      iframe.src = src; // Force reload to reset player state
-    }
+  // Optional: Reset iframe when mouse leaves (prevents sound leak)
+  document.querySelectorAll(".video-card").forEach((card) => {
+    card.addEventListener("mouseleave", () => {
+      const iframe = card.querySelector(".card-video");
+      if (iframe) {
+        const src = iframe.src;
+        iframe.src = src; // Force reload to reset player state
+      }
+    });
   });
-});
-
 
   // Console guide for easy customization
   console.log(

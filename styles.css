@@ -17,7 +17,11 @@
 }
 
 body {
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
   background-color: var(--dark);
   color: var(--light);
   line-height: 1.5;
@@ -116,7 +120,11 @@ body {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(145deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.75) 100%);
+  background: linear-gradient(
+    145deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
   z-index: 1;
 }
 
@@ -197,7 +205,7 @@ body {
 
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255,255,255,0.7);
+  border-color: rgba(255, 255, 255, 0.7);
   transform: translateY(-3px);
 }
 
@@ -226,13 +234,24 @@ body {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ==================== OTHER SECTIONS ==================== */
@@ -247,7 +266,8 @@ body {
   padding: 0 2rem;
 }
 
-.featured h2, .about-text h2 {
+.featured h2,
+.about-text h2 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 3rem;
@@ -266,7 +286,9 @@ body {
   border-radius: 28px;
   overflow: hidden;
   background: var(--card-bg);
-  transition: transform 0.3s ease, box-shadow 0.3s;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s;
   display: flex;
   flex-direction: column;
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -480,13 +502,28 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .nav-links { display: none; }
-  .mobile-menu-btn { display: block; }
-  .about-grid { flex-direction: column; }
-  .hero-subtitle { font-size: 1.15rem; }
-  .hero-buttons { margin-bottom: 4rem; }
-  .featured-grid { gap: 1.5rem; }
-  .footer-content { flex-direction: column; text-align: center; }
+  .nav-links {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+  .about-grid {
+    flex-direction: column;
+  }
+  .hero-subtitle {
+    font-size: 1.15rem;
+  }
+  .hero-buttons {
+    margin-bottom: 4rem;
+  }
+  .featured-grid {
+    gap: 1.5rem;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .card-video-wrapper {
@@ -524,8 +561,9 @@ body {
 
 /* Home Hero - Background Image */
 .hero-home {
-  background: linear-gradient(145deg, rgba(0,0,0,0.45), rgba(0,0,0,0.75)), 
-              url('images/Index/IMG_4042.png') center/cover no-repeat;
+  background:
+    linear-gradient(145deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.75)),
+    url("images/Index/IMG_4042.png") center/cover no-repeat;
   height: 100vh;
   min-height: 700px;
   position: relative;
@@ -541,18 +579,43 @@ body {
   z-index: 3;
 }
 
+/* Contact Hero - Background Image */
+.hero-contact {
+  background:
+    linear-gradient(145deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.75)),
+    url("images/contact/pexels-daryl-john-de-guzman-113010230-11631926.jpg")
+      center/cover no-repeat;
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-home .hero-content {
+  position: relative;
+  z-index: 3;
+}
 /* Optional: Darker overlay if needed */
 .hero-home .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(145deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.75) 100%);
+  background: linear-gradient(
+    145deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
   z-index: 1;
 }
 
 /* UX Hero Variation */
 .hero-ux {
-  background: linear-gradient(145deg, rgba(0,0,0,0.6), rgba(0,0,0,0.85)), 
-              url('images/uxui/background.jpg') center/cover no-repeat;
+  background:
+    linear-gradient(145deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)),
+    url("images/uxui/background.jpg") center/cover no-repeat;
 }
 
 .hero-ux .hero-content {
@@ -570,8 +633,9 @@ body {
 
 /* Videos Hero */
 .hero-videos {
-  background: linear-gradient(145deg, rgba(0,0,0,0.65), rgba(0,0,0,0.85)), 
-              url('images/video/background.jpg') center/cover no-repeat;
+  background:
+    linear-gradient(145deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)),
+    url("images/video/background.jpg") center/cover no-repeat;
 }
 
 .hero-videos .hero-content {
@@ -583,12 +647,11 @@ body {
   transform: scale(1.05);
 }
 
-
-
 /* Games & Immersive Hero */
 .hero-immersive {
-  background: linear-gradient(145deg, rgba(0,0,0,0.7), rgba(0,0,0,0.85)), 
-              url('images/games/background.jpg') center/cover no-repeat;
+  background:
+    linear-gradient(145deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)),
+    url("images/games/pexels-pavel-danilyuk-7776903.jpg") center/cover no-repeat;
 }
 
 .hero-immersive .hero-content {
@@ -670,8 +733,9 @@ body {
 
 /* Creative Coding Hero */
 .hero-creative {
-  background: linear-gradient(145deg, rgba(0,0,0,0.6), rgba(0,0,0,0.85)), 
-              url('images/creative/background.png') center/cover no-repeat;
+  background:
+    linear-gradient(145deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)),
+    url("images/creative/background.png") center/cover no-repeat;
 }
 
 .hero-creative .hero-content {
